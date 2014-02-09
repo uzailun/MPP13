@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+<!--This is the Home Page-->
+<div data-role="page" id="home">
+	<div data-role="header" data-position="fixed">
+		<h3>MPP13 Kit</h3>
+	</div>
+	<div role="main" class="ui-content">
+		<h3>Welcome</h3>
+        <p>This apps to help you to navigate you to the class. Hope you enjoy this apps.</p>
+		<p><b>Please choose following courses.</b></p>
+		<a href="#p1" class="ui-btn ui-corner-all ui-shadow ui-mini">MPT1293 - CD-ROM Based Multimedia Development</a>
+		<a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-mini">MPT1483 - Visual Technology Production</a>
+		<a href="#p3" class="ui-btn ui-corner-all ui-shadow ui-mini">MPT1403 - Introduction to Network System</a>
+		<br>
+		<br>
+		<h3>Class Schedule</h3>
+		<p>4.00 PM - 7.00 PM</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"><div class="ui-bar ui-bar-a ui-mini" style="height:60px">Monday<br>MPT1483<br>C14-420 (01)</div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-a ui-mini" style="height:60px">Tuesday<br>MPT1293<br>C14-227</div></div>
+			<div class="ui-block-c"><div class="ui-bar ui-bar-a ui-mini" style="height:60px">Wednesday<br>MPT1403<br>C15-412</div></div>
+		</div><!-- /grid-b -->
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#member" data-icon="user" data-transition="flow">Members</a></li>
+				<li><a href="#about" data-icon="info" data-transition="flow">About</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<!--This is Member page-->
+<div data-role="page" id="member">
+	<div data-role="header" data-position="fixed">
+		<h3>MPP13 Kit</h3>
+	</div>
+	<div role="main" class="ui-content">
+		<p>To a make a call, send SMS, and email, please tap to following member.</p>
+		<!--Popup for MPP Members-->
+		<div data-role="popup" id="popupsarah">
+			<div class="ui-grid-b center">
+				<div class="ui-block-a"><a href="tel:+60137337669" class="ui-shadow ui-btn ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline">Phone</a></div>
+				<div class="ui-block-b"><a href="sms://+60137337669" class="ui-shadow ui-btn ui-corner-all ui-icon-comment ui-btn-icon-notext ui-btn-inline">SMS</a></div>
+				<div class="ui-block-c"><a href="mailto:sarahhime90@yahoo.com" class="ui-shadow ui-btn ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline">Mail</a></div>
+			</div>
+		</div>
+		
+		<div data-role="popup" id="popupfatin">
+			<div class="ui-grid-b center">
+				<div class="ui-block-a"><a href="tel:+60137390790" class="ui-shadow ui-btn ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline">Phone</a></div>
+				<div class="ui-block-b"><a href="sms://+60137390790" class="ui-shadow ui-btn ui-corner-all ui-icon-comment ui-btn-icon-notext ui-btn-inline">SMS</a></div>
+				<div class="ui-block-c"><a href="mailto:atien_adriana@yahoo.com" class="ui-shadow ui-btn ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline">Mail</a></div>
+			</div>
+		</div>
+		
+		<div data-role="popup" id="popupracel">
+			<div class="ui-grid-b center">
+				<div class="ui-block-a"><a href="tel:+60198232773" class="ui-shadow ui-btn ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline">Phone</a></div>
+				<div class="ui-block-b"><a href="sms://+60198232773" class="ui-shadow ui-btn ui-corner-all ui-icon-comment ui-btn-icon-notext ui-btn-inline">SMS</a></div>
+				<div class="ui-block-c"><a href="mailto:rhachellephieceshareinholl@gmail.com" class="ui-shadow ui-btn ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline">Mail</a></div>
+			</div>
+		</div>
+		
+		<div data-role="popup" id="popupuzailun">
+			<div class="ui-grid-b center">
+				<div class="ui-block-a"><a href="tel:+60137392070" class="ui-shadow ui-btn ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline">Phone</a></div>
+				<div class="ui-block-b"><a href="sms://+60137392070" class="ui-shadow ui-btn ui-corner-all ui-icon-comment ui-btn-icon-notext ui-btn-inline">SMS</a></div>
+				<div class="ui-block-c"><a href="mailto:uzailunnafais@gmail.com" class="ui-shadow ui-btn ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline">Mail</a></div>
+			</div>
+		</div>
+		
+		<!--List of MPP Members-->
+		<ul data-role="listview" data-inset="true">
+			<li><a href="#popupsarah" data-rel="popup"  data-transition="flip">
+				<img src="images/member/sarah.jpg">
+			<h2>Fatimah Sarah binti Yaacob</h2>
+			<p>MP131054</p></a>
+			</li>
+			<li><a href="#popupfatin" data-rel="popup"  data-transition="flip">
+				<img src="images/member/fatin.jpg">
+			<h2>Nurfatin Atikah binti Kamaruddin</h2>
+			<p>MP131051</p></a>
+			</li>
+			<li><a href="#popupracel" data-rel="popup"  data-transition="flip">
+				<img src="images/member/rhachelle.jpg">
+			<h2>Rhachelle Phiecesha Reinholl</h2>
+			<p>MP131073</p></a>
+			</li>
+			<li><a href="#popupuzailun" data-rel="popup"  data-transition="flip">
+				<img src="images/member/uzailun.jpg">
+			<h2>Uzailun Nafais bin Zainal Abidin</h2>
+			<p>MP131055</p></a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home" data-transition="flow">Home</a></li>
+                <li><a data-icon="user" class="ui-btn-active ui-state-persist">Members</a></li>
+                <li><a href="#about" data-icon="info" data-transition="flow">About</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<!--This is About page-->
+<div data-role="page" id="about">
+	<div data-role="header" data-position="fixed">
+		<h3>MPP13 Kit</h3>
+	</div>
+	<div role="main" class="ui-content">
+		<h3>About Us</h3>
+		<p align="center"><img src="images/about.png"/></p>
+        <p>This apps is invited to guide us to study in Educational Technology. We expect to finish our study on January 2015.</p>
+		<p>Apps version: 1.0.1</p>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home" data-transition="flow">Home</a></li>
+                <li><a href="#member" data-icon="user" data-transition="flow">Members</a></li>
+                <li><a data-icon="info" data-transition="flow" class="ui-btn-active ui-state-persist">About</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<!--This is CD-ROM page (p1) -->
+<div data-role="page" class="jqm-demos ui-responsive-panel" id="p1" data-title="MPT1293 - CD-ROM Based Multimedia Development">
+    <div data-role="header">
+        <h3>MPT1293 - CD-ROM Based Multimedia Development</h3>
+        <a href="#nav-panel1" data-icon="bars" data-iconpos="notext">Menu</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+        <h3>Synopsis</h3>
+        <p>This course gives exposure and experience to students in developing interactive educational multimedia software based on any software design theory. Aspects that will be discussed in this course are project management approaches, development process and final format of the software. Several evaluation approaches and software applications in teaching and learning will be conducted in this course. This course requires authoring skills that have been learned in MPT 1193.</p>
+		<p>Time: 4.00PM - 7.00PM (Tuesday)</p>
+		<p>Venue: C14-227</p>
+		<h3>Lecturer</h3>
+		<a href="#sykin" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Dr Norasykin binti Mohd Zaid</a>
+			<div data-role="popup" id="sykin">
+				<p><img src="images/sykin.jpg"/></p>
+			</div>
+		<a href="#nurbiha1" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Dr Nurbiha binti A. Shukor</a>
+			<div data-role="popup" id="nurbiha1">
+				<p><img src="images/nurbiha.jpg"/></p>
+			</div>
+        <div data-demo-html="#panel-responsive-page1"></div><!--/demo-html -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="#home" data-ajax="false" class="ui-btn ui-shadow ui-corner-all ui-mini ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-alt-icon ui-nodisc-icon" data-icon="home" data-iconpos="notext">Home</a>
+    </div><!-- /content -->
+    <div data-role="panel" data-display="push" data-theme="b" id="nav-panel1">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+				<li><a href="#home" data-transition="slide">Home</a></li>
+                <li><a href="#p1" data-transition="slide">MPT1293 - CD-ROM Based Multimedia Development</a></li>
+                <li><a href="#p2" data-transition="slide">MPT1483 - Visual Technology Production</a></li>
+                <li><a href="#p3" data-transition="slide">MPT1403 - Introduction to Network System</a></li>
+        </ul>
+    </div><!-- /panel -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#member" data-icon="user" data-transition="flow">Members</a></li>
+				<li><a href="#about" data-icon="info" data-transition="flow">About</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--This is Visual page (p2)-->
+<div data-role="page" class="jqm-demos ui-responsive-panel" id="p2" data-title="MPT1483 - Visual Technology Production">
+    <div data-role="header">
+        <h3>MPT1483 - Visual Technology Production</h3>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+        <h3>Synopsis</h3>
+        <p>This course gives exposures on theories and skills of design and production of visual static media. Students will develop a complete package using the media. The aspect of computer integration will be focused more in this course. Students also will evaluate the package that has been developed. The production of static media will focus more on photography and digital graphics fields in teaching. Varieties of photographing techniques, development of visual materials and image manipulation techniques will be focused in this course to produce excellent and quality teaching material</p>
+		<p>Time: 4.00PM - 7.00PM (Monday)</p>
+		<p>Venue: C14-420 (01)</p>
+		<h3>Lecturer</h3>
+		<a href="#jamal" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">PM Dr Jamalludin bin Harun</a>
+			<div data-role="popup" id="jamal">
+				<p><img src="images/jamal.jpg"/></p>
+			</div>
+		<a href="#nurbiha2" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Dr Nurbiha binti A. Shukor</a>
+			<div data-role="popup" id="nurbiha2">
+				<p><img src="images/nurbiha.jpg"/></p>
+			</div>
+        <div data-demo-html="#panel-responsive-page1"></div><!--/demo-html -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="#home" data-ajax="false" class="ui-btn ui-shadow ui-corner-all ui-mini ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-alt-icon ui-nodisc-icon" data-icon="home" data-iconpos="notext">Home</a>
+    </div><!-- /content -->
+    <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+				<li><a href="#home" data-transition="slide">Home</a></li>
+                <li><a href="#p1" data-transition="slide">MPT1293 - CD-ROM Based Multimedia Development</a></li>
+                <li><a href="#p2" data-transition="slide">MPT1483 - Visual Technology Production</a></li>
+                <li><a href="#p3" data-transition="slide">MPT1403 - Introduction to Network System</a></li>
+        </ul>
+    </div><!-- /panel -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#member" data-icon="user" data-transition="flow">Members</a></li>
+				<li><a href="#about" data-icon="info" data-transition="flow">About</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--This is Networking page (p3)-->
+<div data-role="page" class="jqm-demos ui-responsive-panel" id="p3" data-title="MPT1403 - Introduction to Network System">
+    <div data-role="header">
+        <h3>MPT1403 - Introduction to Network System</h3>
+        <a href="#nav-panel3" data-icon="bars" data-iconpos="notext">Menu</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+        <h3>Synopsis</h3>
+        <p>In this course, students will discuss the role of computer in the school. The development of the computer technology and networking including hardware and software are also covered in this course. This course will enable students to experience in assembling computer hardware and computer networking. They are given a chance to design, install, testing and commissioning wired and wireless networking in the lab. Finally, students will experienced designing, installing, testing and commissioning computer networking at site for T&L purposes as a project to this course.</p>
+		<p>Time: 4.00PM - 7.00PM (Wednesday)</p>
+		<p>Venue: C15-412</p>
+		<h3>Lecturer</h3>
+		<a href="#azean" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Dr. Noor Azean binti Atan</a>
+			<div data-role="popup" id="azean">
+				<p><img src="images/azean.jpg"/></p>
+			</div>
+		<a href="#nihra" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Dr Nurbiha binti A. Shukor</a>
+			<div data-role="popup" id="nihra">
+				<p><img src="images/nihra.jpg"/></p>
+			</div>
+        <div data-demo-html="#panel-responsive-page1"></div><!--/demo-html -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="#home" data-ajax="false" class="ui-btn ui-shadow ui-corner-all ui-mini ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-alt-icon ui-nodisc-icon" data-icon="home" data-iconpos="notext">Home</a>
+    </div><!-- /content -->
+    <div data-role="panel" data-display="push" data-theme="b" id="nav-panel3">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+				<li><a href="#home" data-transition="slide">Home</a></li>
+                <li><a href="#p1" data-transition="slide">MPT1293 - CD-ROM Based Multimedia Development</a></li>
+                <li><a href="#p2" data-transition="slide">MPT1483 - Visual Technology Production</a></li>
+                <li><a href="#p3" data-transition="slide">MPT1403 - Introduction to Network System</a></li>
+        </ul>
+    </div><!-- /panel -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#member" data-icon="user" data-transition="flow">Members</a></li>
+				<li><a href="#about" data-icon="info" data-transition="flow">About</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
